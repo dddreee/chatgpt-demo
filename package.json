@@ -6,6 +6,7 @@
     "dev": "astro dev --host 0.0.0.0",
     "start": "astro dev",
     "build": "astro build",
+    "server": "astro build && HOST=0.0.0.0 PORT=3000 /root/.nvm/versions/node/v18.15.0/bin/node ./dist/server/entry.mjs",
     "build:vercel": "OUTPUT=vercel astro build",
     "build:netlify": "OUTPUT=netlify astro build",
     "preview": "astro preview",
